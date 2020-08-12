@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MobileZilla - your smartphones store</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&family=Contrail+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- NAV STARTS -->
+    <header class="header">
+        <section class="container">
+            <nav class="nav">
+                <div class="overlay"></div>
+                <div class="overlay-bag"></div>
+                <div class="menu-toggle">
+                    <i class="fas fa-times times-menu"></i>
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu">
+                    <div class="menu__logo">
+                        <i class="fas fa-mobile"></i>
+                        <h1 class="logo__text">Mobile</h1>
+                        <span class="logo__span">Zilla</span>
+                    </div>
+                    <li class="menu__item"><a href="#hero" class="menu__link">home</a></li>
+                    <li class="menu__item"><a href="#new-in" class="menu__link">new in</a></li>
+                    <li class="menu__item"><a href="#brands" class="menu__link">brands</a></li>
+                    <li class="menu__item"><a href="#footer" class="menu__link">contact</a></li>
+                </ul>
+                <div class="cart-search-cnt">
+                    <i class="fas fa-shopping-cart">
+                        <div class="bag-items-counter"></div>
+                    </i>
+                </div>
+            </nav>
+        </section>
+        <!-- BAG starts -->
+        <section class="bag">
+            <section class="container">
+                <header class="bag-header">
+                    <i class="fas fa-times times-bag"></i>
+                    <h1 class="bag-title">Your bag</h1>
+                </header>
+                <div class="bag-items-cnt"></div>
+                <h4 class="total-price">Your bag is empty</h4>
+                <footer class="bag-footer">
+                    <button class="clear-bag-btn">clear bag</button>
+                    <button class="continue-shopping-btn">continue shopping</button>
+                </footer>
+            </section>
+        </section>
+    </header>
+    <!-- NAV ENDS -->
+    <!-- HERO STARTS -->
+    <article class="hero" id="hero">
+        <section class="container">
+            <div class="hero-logo">
+                <h2 class="sub-headline">
+                    New In
+                </h2>
+                <h1 class="headline">
+                    MobileZilla
+                </h1>
+                <a href="#new-in" class="reveal-1500">
+                    <button class="hero-btn reveal">
+                        view
+                    </button>
+                </a>
+            </div>
+        </section>
+    </article>
+    <!-- HERO ENDS -->
+    <!-- NEW IN STARTS -->
+    <section class="new-in" id="new-in">
+        <section class="container">
+            <h1 class="section-title">
+                new in
+            </h1>
+            <!-- element starts -->
+            <div class="grid">
+            </div>
+        </section>
+    </section>
+    <!-- NEW IN ENDS -->
+    <!-- BRANDS STARTS-->
+    <section class="brands" id="brands">
+        <section class="container">
+            <h2 class="section-title reveal">Choose your brand</h2>
+            <ul class="brands-btn-cnt reveal">
+                <li class="brands-btn active" data-brand="all">All</li>
+                <li class="brands-btn" data-brand="apple">Apple</li>
+                <li class="brands-btn" data-brand="huawei">Huawei</li>
+                <li class="brands-btn" data-brand="samsung">Samsung</li>
+                <li class="brands-btn" data-brand="xiaomi">Xiaomi</li>
+            </ul>
+        </section>
+        <!-- slider -->
+        <h2 class="slider-section-title reveal">choose your model</h2>
+        <section class="brands-product-slider reveal-1500">
+        </section>
+        <section class="chosen-item">
+        </section>
+        <!-- slider ends -->
+    </section>
+    <!-- BRANDS ENDS -->
+    <!-- FOOTER STARTS -->
+    <footer class="footer" id="footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-content-about animate-top">
+                </div>
+                <div class="footer-content-divider animate-bottom">
+                    <div class="social-media">
+                        <h4 class="reveal">Follow us</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="newsletter-container">
+                        <h4 class="reveal">Newsletter</h4>
+                        <form action="" class="newsletter-form">
+                            <input type="text" class="newsletter-input reveal" placeholder="Your e-mail addresss...">
+                            <button class="newsletter-btn" type="submit">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+    <!-- CONTENTFUL -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <!-- scroll smooth -->
+    <script src="smoothscroll.min.js" defer>
+        smoothscroll.polyfill();
+        window.__forceSmoothScrollPolyfill__ = true;
+    </script>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
